@@ -76,4 +76,7 @@ button[class^="btn_down"]{
     top: -80px;
 }
 
+.opacity{
+    opacity: 0.2;
+}
 
