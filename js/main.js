@@ -1,4 +1,4 @@
-// declaration variables-constants
+// declaration array of imgs
 const imgs = [
     "imgs/01.webp",
     "imgs/02.webp",
@@ -6,6 +6,9 @@ const imgs = [
     "imgs/04.webp",
     "imgs/05.webp"
 ];
+
+/*********************** SLIDER BASE ***********************/
+// declaration variables-constants
 const btnUPEl = document.querySelector(".btn_up");
 const btnDownEl = document.querySelector(".btn_down");
 const imgSliderEl = document.querySelector(".img_slider");
@@ -24,7 +27,7 @@ btnUPEl.addEventListener("click", function () {
 
     // increase counter-imgs & show next img
     currentImg++;
-    imgSliderEl.src = `imgs/0${currentImg}.webp`;
+    imgSliderEl.src = imgs[currentImg - 1];
 })
 
 
@@ -37,5 +40,15 @@ btnDownEl.addEventListener("click", function () {
 
     // decrease counter-imgs & show previous img
     currentImg--;
-    imgSliderEl.src = `imgs/0${currentImg}.webp`;
+    imgSliderEl.src = imgs[currentImg - 1];
 })
+
+
+
+/*********************** SLIDER BONUS ***********************/
+// declaration variables-constants
+const btnUPEl2= document.querySelector(".btn_up2");
+const btnDownEl2= document.querySelector(".btn_down2");
+const imgContainerEl = document.querySelector(".imgs_container");
+let currentImg2 = 1;
+

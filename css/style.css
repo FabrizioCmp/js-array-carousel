@@ -2,19 +2,25 @@ body{
     background-color: #151515;
 }
 
-img{ 
+.slider img{ 
     height: 100%;
     margin: auto;
     display: block;
 }
 
-.slider > button{
+h1{
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 3rem;
+}
+
+button{
     background-color: rgba(255, 255, 255, 0.476);
     border-radius: 5px;
     width: 35px;
 }
 
-.btn_up > img{
+button[class^="btn_up"] > img{
     transform: rotate(180deg);
 }
 
@@ -22,25 +28,52 @@ img{
     width: 70%;
     height: 300px;
     position: relative;  
-    margin-top: 6rem ;
+    margin-top: 3rem ;
 }
+
+.slider2{
+    height: 400px;
+    width: 80%;
+    margin: auto;
+}
+
 
 .img_container{
     width: 100%;
     height: 100%;
 }
 
-.btn_up{
+button[class^="btn_up"]{
+    z-index: 20;
     position: absolute;
     top: 2%;
     left: 50%;
     transform: translate(-50%);
 }
-.btn_down{
+button[class^="btn_down"]{
+    z-index: 20;
     position: absolute;
     bottom: 2%;
     left: 50%;
     transform: translate(-50%);
+}
+
+.ims_container > div{
+}
+
+.mycol-5{
+    height: calc(400px /5);
+    overflow: hidden;
+    position: relative;
+}
+
+.mycol-5 img{
+    position: absolute;
+    z-index: -1;
+}
+
+.img-80{
+    top: -80px;
 }
 
 

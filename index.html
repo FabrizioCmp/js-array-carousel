@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Slider</title>
 </head>
+
 <body>
-    <div class="container d-flex justify-content-center ">
+
+    <!-- slider Base -->
+    <div class="container d-flex align-items-center flex-column ">
+        <h1>Slider base</h1>
+
         <div class="slider">
             <button class="btn_up">
                 <img class="img-fluid " src="imgs/arrowDown.png" alt="">
@@ -25,6 +32,45 @@
 
     </div>
 
+    <!-- bonus -->
+    <div class="container d-flex align-items-center flex-column ">
+        <h1>Slider bonus</h1>
+        <div class="slider2 mt-5">
+            <div class="row h-100">
+                <div class="col-8 h-100">
+                    <img class="h-100 m-auto d-block" src="imgs/01.webp" alt="">
+                </div>
+                <div class="col-4 h-100 position-relative">
+                    <button class="btn_up2">
+                        <img class="img-fluid " src="imgs/arrowDown.png" alt="">
+                    </button>
+                    <button class="btn_down2">
+                        <img class="img-fluid" src="imgs/arrowDown.png" alt="">
+                    </button>
+                    <div class="imgs-container h-100 d-flex flex-column">
+                        <div class="mycol-5">  
+                            <img class="w-100 img-80" src="imgs/01.webp" alt="">   
+                        </div>
+                        <div class="mycol-5">
+                            <img class="w-100 img-80" src="imgs/02.webp" alt="">   
+                        </div>
+                        <div class="mycol-5 ">
+                            <img id="" class="w-100 " src="imgs/03.webp" alt="">  
+                        </div>
+                        <div class="mycol-5">
+                            <img class="w-100 " src="imgs/04.webp" alt=""> 
+                        </div>
+                        <div class="mycol-5">
+                            <img class="w-100 img-80" src="imgs/05.webp" alt=""> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
