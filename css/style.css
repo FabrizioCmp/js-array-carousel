@@ -1,0 +1,31 @@
+body{
+    background-color: #151515;
+}
+
+img{ 
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.box_imgs{
+    width: 70%;
+    height: 300px;
+    position: relative;  
+    margin: 3rem 0;
+}
+
+.btn_up{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.btn_down{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
